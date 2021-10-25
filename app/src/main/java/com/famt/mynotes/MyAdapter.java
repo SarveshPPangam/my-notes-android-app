@@ -69,7 +69,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                     public boolean onMenuItemClick(MenuItem item) {
                         if (item.getTitle().equals("DELETE")) {
                             //delete the note
-                            System.out.println(note.getId());
                             db.deletedata(note.getId());
                             Toast.makeText(context, "Note deleted", Toast.LENGTH_SHORT).show();
                             Intent myIntent = new Intent(context, MainActivity.class);
@@ -128,7 +127,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            titleOutput = itemView.findViewById(R.id.timeitem);
+            titleOutput = itemView.findViewById(R.id.titleitem);
             descriptionOutput = itemView.findViewById(R.id.descriptionitem);
             timeOutput = itemView.findViewById(R.id.timeitem);
         }

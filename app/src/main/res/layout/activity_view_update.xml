@@ -11,7 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp">
-<!--        android:orientation="vertical">-->
     <TextView
         android:id="@+id/titletextview"
         android:layout_width="wrap_content"
@@ -28,7 +27,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
-        android:layout_marginLeft="100sp"
+        android:layout_marginLeft="50dp"
         android:gravity="center"
         android:backgroundTint="#F8C471"
         android:text="Save"

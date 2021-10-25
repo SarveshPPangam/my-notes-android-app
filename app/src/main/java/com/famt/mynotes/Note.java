@@ -7,7 +7,6 @@ public class Note {
     private String description;
     private long createdTime;
 
-
     public Note(int id, String title, String description, long createdTime) {
         this.id = id;
         this.title = title;
@@ -37,15 +36,9 @@ public class Note {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
     public long getCreatedTime() {
         return createdTime;
     }
 
-    public void setCreatedTime(long createdTime) {
-        this.createdTime = createdTime;
-    }
 }
